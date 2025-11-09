@@ -23,9 +23,45 @@ export default function Home() {
   ];
   return (
     <div className="min-h-screen max-w-[640px] mx-auto relative py-5 px-5 md:px-0">
-      {/* fancy black radial gradient */}
-
-      {/* fiber dots background */}
+      <div className="fiber-dots">
+        <div
+          className="absolute inset-0 pointer-events-none rounded-lg"
+          style={{
+            boxShadow: "inset 0 0 20px 20px rgba(0, 0, 0, 0.8)",
+            background:
+              "radial-gradient(ellipse at center, transparent 20%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)",
+          }}
+        />
+      </div>
+      {/* Glowing ring accents */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        {/* Top right purple glow */}
+        <div
+          className="absolute -top-20 right-0 w-[500px] h-[500px] rounded-full"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(139, 92, 246, 0.15), transparent 60%)",
+            filter: "blur(40px)",
+          }}
+        />
+        {/* Bottom left blue glow */}
+        <div
+          className="absolute -bottom-20 left-0 w-[600px] h-[600px] rounded-full"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(59, 130, 246, 0.12), transparent 60%)",
+            filter: "blur(50px)",
+          }}
+        />
+        {/* Center subtle gradient */}
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 50% at 50% 50%, rgba(139, 92, 246, 0.05), transparent 70%)",
+          }}
+        />
+      </div>
 
       <div className="relative z-10">
         <header className="w-full"></header>
@@ -76,11 +112,11 @@ export default function Home() {
 
             {/* Domain Experience */}
             <div className="relative">
-              <div className="flex flex-col relative items-start justify-center min-h-[120px] gap-3 rounded-lg overflow-hidden ">
+              <div className="flex flex-col relative bg-transparent items-start justify-center min-h-[120px] gap-3 rounded-lg overflow-hidden ">
                 <h3 className="text-xs text-zinc-500 uppercase tracking-wider">
                   Domain Experience
                 </h3>
-                <div className="fiber-dots ">
+                {/* <div className="fiber-dots ">
                   <div
                     className="absolute inset-0 pointer-events-none rounded-lg"
                     style={{
@@ -89,7 +125,7 @@ export default function Home() {
                         "radial-gradient(ellipse at center, transparent 20%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)",
                     }}
                   />
-                </div>
+                </div> */}
                 <div className="flex flex-wrap gap-2 max-w-lg mx-auto items-center justify-center relative z-10">
                   {[
                     "Financial Trading",
