@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Instrument_Sans, Young_Serif } from "next/font/google";
+import { Outfit, Syne } from "next/font/google";
 import "./globals.css";
 
-const instrumentSans = Instrument_Sans({
+const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-instrument",
+  variable: "--font-outfit",
 });
 
-const youngSerif = Young_Serif({
+const syne = Syne({
   subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-young-serif",
+  variable: "--font-syne",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${instrumentSans.variable} ${youngSerif.variable} font-sans antialiased bg-black text-white`}
+        className={`${outfit.variable} ${syne.variable} font-sans antialiased bg-black text-white`}
       >
         {children}
       </body>

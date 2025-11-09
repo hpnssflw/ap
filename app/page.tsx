@@ -35,16 +35,17 @@ export default function Home() {
         <header className="w-full"></header>
 
         <main className="flex flex-col gap-16 relative">
-          <div className="flex flex-col gap-2.5 ">
-            <h1 className=" tech-gradient ">Artem Polozov</h1>
+          <div className="flex flex-col ">
+            <span className="tech-gradient font-extrabold font-display text-[24px] mt-5">
+              Artem Polozov
+            </span>
+            <div className="flex flex-col md:flex-row gap-1">
+              <p className="text-zinc-300">
+                Building fast, scalable, secure apps with React/Nextjs tools.
+              </p>
 
-            <p className="text-zinc-300">
-              Web developer building fast, scalable, secure apps. <br />
-              Proficient in building products across fintech, AI, and complex
-              web systems.
-            </p>
-
-            <Navigation />
+              <Navigation />
+            </div>
           </div>
 
           <div className="flex flex-col">
@@ -71,7 +72,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="contact">
+          {/* <section id="contact">
             <h2 className="w-fit mr-1 text-white">Get in touch</h2>
 
             <div className="mt-2 flex flex-wrap gap-3">
@@ -145,7 +146,7 @@ export default function Home() {
                 </button>
               </div>
             </form>
-          </section>
+          </section> */}
         </main>
       </div>
     </div>

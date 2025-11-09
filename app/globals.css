@@ -8,43 +8,47 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-instrument);
-  --font-serif: var(--font-young-serif);
+  --font-sans: var(--font-outfit);
+  --font-display: var(--font-syne);
 }
-
-
 
 body {
   background: var(--background-default);
   color: var(--typography-default);
   font-size: 14px;
-  font-weight: 100;
-  line-height: 1.4;
-  font-family: var(--font-instrument);
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: var(--font-sans);
 }
 
 h1 {
   font-size: 32px;
   font-weight: 400;
-  font-family: var(--font-young-serif);
-  text-decoration: underline
+  font-family: var(--font-syne);
 }
 
 h2 {
-  font-size: 16px;
-  font-family: var(--font-young-serif);
-  text-decoration: underline;
+  font-size: 14px;
+  font-family: var(--font-syne);
+  font-weight: 800;
 }
 
 h3 {
   font-size: 18px;
-  font-family: var(--font-young-serif);
-  text-decoration: underline;
+  font-family: var(--font-syne);
 }
 
-
 .tech-gradient {
-  background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #fb5607, #ff006e);
+  background: linear-gradient(
+    90deg,
+    #ff006e,
+    #8338ec,
+    #3a86ff,
+    #06ffa5,
+    #ffbe0b,
+    #fb5607,
+    #ff006e
+  );
   background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,7 +57,8 @@ h3 {
 }
 
 @keyframes gradient-shift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {

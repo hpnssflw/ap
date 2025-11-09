@@ -6,14 +6,14 @@ export default function Navigation() {
       <p className="text-zinc-300">You can see more in </p>
       <Link
         href="/#projects"
-        className="transition-colors hover:text-zinc-300 font-serif underline"
+        className="transition-colors hover:text-zinc-300 italic font-medium underline"
       >
         works
       </Link>
       <p>,</p>
       <Link
         href="/career"
-        className="transition-colors hover:text-zinc-300 font-serif underline"
+        className="transition-colors hover:text-zinc-300 italic font-medium underline"
       >
         career
       </Link>
