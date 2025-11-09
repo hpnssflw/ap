@@ -27,7 +27,7 @@ h2 {
   font-size: 18px;
   font-weight: 400;
   text-decoration: underline;
-  color: rgb(153, 255, 0)
+  color: rgb(153, 255, 0);
 }
 
 .tech-gradient {
@@ -55,5 +55,47 @@ h2 {
   }
   50% {
     background-position: 100% 50%;
+  }
+}
+
+.fiber-dots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 1;
+  height: 125px;
+}
+
+.fiber-dots::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    rgba(60, 60, 60, 0.8) 2px,
+    transparent 2px
+  );
+  background-size: 20px calc(100vh / 50);
+  animation: fiber-shift 30s ease-in-out infinite;
+}
+
+@keyframes fiber-shift {
+  0%,
+  100% {
+    opacity: 0.6;
+    filter: brightness(1);
+  }
+  25% {
+    opacity: 0.7;
+    filter: brightness(0.8);
+  }
+  50% {
+    opacity: 0.65;
+    filter: brightness(0.9);
+  }
+  75% {
+    opacity: 0.7;
+    filter: brightness(0.7);
   }
 }

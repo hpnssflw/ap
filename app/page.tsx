@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SocialLink from "./components/SocialLink";
 import WorkCard from "./components/WorkCard";
+
 export default function Home() {
   const works = [
     {
@@ -31,16 +32,18 @@ export default function Home() {
         }}
       />
 
+      {/* fiber dots background */}
+
       <div className="relative z-10">
         <header className="w-full"></header>
 
         <main className="flex flex-col gap-16 relative">
           {/* Hero Section */}
-          <section className="flex flex-col gap-6 mt-8">
+          <section className="flex flex-col gap-5">
             <div className="flex flex-col gap-1">
               <div className="flex gap-1 items-end">
                 <h1>Artem </h1>
-                <p className="text-[24px] leading-[36px]">👨‍💻</p>
+                <p className="text-[24px] mb-2">👨‍💻</p>
               </div>
               <p className="tech-gradient text-[18px]">
                 Full-Stack Developer with frontend focus — React, Next.js,
@@ -48,9 +51,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col  gap-15 md:gap-5">
               <div className="flex flex-row gap-4">
-                <p className="text-zinc-400 ">
+                <p className="text-zinc-400 max-w-md">
                   Building production web apps for fintech, AI platforms, and
                   enterprise systems. Specialized in complex data visualization,
                   real-time features, and scalable architectures.
@@ -73,7 +76,9 @@ export default function Home() {
               </div>
 
               {/* Domain Experience */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col relative items-center justify-center h-[125px] gap-3">
+                <div className="fiber-dots" />
+
                 <div className="flex flex-wrap items-center justify-center gap-2">
                   {[
                     "Financial Trading Platforms",
