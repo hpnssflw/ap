@@ -10,7 +10,7 @@ interface WorkCardProps {
 
 export default function WorkCard({ title, description, tags, url, image }: WorkCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-[4px]   bg-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/10 hover:shadow-lg hover:shadow-white/10">
+    <div className="group relative overflow-hidden rounded-[4px]   bg-black backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/10 hover:shadow-lg hover:shadow-white/10">
       <div className="relative h-36 w-full overflow-hidden">
         <Image
           src={image}
@@ -22,7 +22,7 @@ export default function WorkCard({ title, description, tags, url, image }: WorkC
       </div>
       
       <div className="p-1.5">
-        <h3 className=" mb-2 ">
+        <h4 className=" mb-2 ">
           {url ? (
             <a 
               href={url} 
@@ -35,7 +35,7 @@ export default function WorkCard({ title, description, tags, url, image }: WorkC
           ) : (
             title
           )}
-        </h3>
+        </h4>
         {/* <p className="mb-4 ">
           {description}
         </p> */}

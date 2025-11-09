@@ -20,7 +20,7 @@ export default function Project({ title, description, role, stack, url }: Projec
       </h4>
       <p className="">{description}</p>
       <p className="mt-2.5"> {role}</p>
-      <p className="text-pink-200 italic font-serif">{stack}</p>
+      <p className="tech-gradient font-serif">{stack}</p>
     </div>
   );
 }

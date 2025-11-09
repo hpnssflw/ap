@@ -20,7 +20,7 @@ export default function Company({ name, years, description, projects }: CompanyP
     <div className="flex flex-col gap-6">
       <div>
         <h3 className="">{name} ({years})</h3>
-        <p className="font-serif italic">{description}</p>
+        <p className="">{description}</p>
       </div>
 
       <div className="flex flex-col gap-8">
