@@ -40,57 +40,59 @@ export default function Home() {
             <div className="flex flex-col gap-1">
               <div className="flex gap-1 items-end">
                 <h1>Artem </h1>
-                <p className="text-[16px]">👨‍💻</p>
+                <p className="text-[24px] leading-[36px]">👨‍💻</p>
               </div>
-              <p className="tech-gradient">
-                Full-Stack Develop with frontend focus — React, Next.js,
+              <p className="tech-gradient text-[18px]">
+                Full-Stack Developer with frontend focus — React, Next.js,
                 TypeScript, Node.js
               </p>
             </div>
 
-            <div className="flex flex-row gap-4">
-              <p className="text-zinc-400 text-sm max-w-lg">
-                Building production web apps for fintech, AI platforms, and
-                enterprise systems. Specialized in complex data visualization,
-                real-time features, and scalable architectures.
-                <span className="mx-1">See more in</span>
-                <Link
-                  href="/#projects"
-                  className="underline text-white hover:text-zinc-300 transition-colors"
-                >
-                  works
-                </Link>
-                <span>,</span>
-                <Link
-                  href="/career"
-                  className="underline text-white hover:text-zinc-300 ml-1 transition-colors"
-                >
-                  career
-                </Link>
-                <span>.</span>
-              </p>
-            </div>
-
-            {/* Domain Experience */}
-            <div className="flex flex-col gap-3">
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Financial Trading Platforms",
-                  "AI/ML Applications",
-                  "Data Visualization",
-                  "Payment Systems",
-                  "Real-time Dashboards",
-                  "Admin Panels",
-                  "Chatbots & Automation",
-                  "Telegram Bots",
-                ].map((domain) => (
-                  <span
-                    key={domain}
-                    className="px-3 py-1.5 bg-zinc-900/30 border border-zinc-800/50 rounded-full text-zinc-400 text-xs"
+            <div className="flex flex-col gap-5">
+              <div className="flex flex-row gap-4">
+                <p className="text-zinc-400 ">
+                  Building production web apps for fintech, AI platforms, and
+                  enterprise systems. Specialized in complex data visualization,
+                  real-time features, and scalable architectures.
+                  <span className="mx-1">See more in</span>
+                  <Link
+                    href="/#projects"
+                    className="underline text-white hover:text-zinc-300 transition-colors"
                   >
-                    {domain}
-                  </span>
-                ))}
+                    works
+                  </Link>
+                  <span>,</span>
+                  <Link
+                    href="/career"
+                    className="underline text-white hover:text-zinc-300 ml-1 transition-colors"
+                  >
+                    career
+                  </Link>
+                  <span>.</span>
+                </p>
+              </div>
+
+              {/* Domain Experience */}
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-wrap items-center justify-center gap-2">
+                  {[
+                    "Financial Trading Platforms",
+                    "AI/ML Applications",
+                    "Data Visualization",
+                    "Payment Systems",
+                    "Real-time Dashboards",
+                    "Admin Panels",
+                    "Chatbots & Automation",
+                    "Telegram Bots",
+                  ].map((domain) => (
+                    <span
+                      key={domain}
+                      className="px-3 py-1.5 bg-zinc-900/30 border border-zinc-800/50 rounded-full text-zinc-400 text-[12px]"
+                    >
+                      {domain}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </section>

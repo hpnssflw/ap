@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const ubuntu = Ubuntu({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-outfit",
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-ubuntu",
   display: "swap",
 });
 
@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${outfit.className} antialiased bg-black text-white`}>
+      <body
+        className={`${ubuntu.className} ${ubuntu.variable} antialiased bg-black text-white`}
+      >
         {children}
       </body>
     </html>
