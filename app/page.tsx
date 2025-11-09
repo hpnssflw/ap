@@ -30,55 +30,57 @@ export default function Home() {
       <div className="relative z-10">
         <header className="w-full"></header>
 
-        <main className="flex flex-col gap-16 relative">
+        <main className="flex flex-col gap-12 relative">
           {/* Hero Section */}
-          <section className="flex flex-col gap-5">
-            <div className="flex flex-col gap-1">
-              <div className="flex gap-1 items-end">
-                <h1>Artem </h1>
-                <p className="text-[24px] mb-2">👨‍💻</p>
+          <section className="flex flex-col gap-6 mt-3">
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-2 items-center">
+                <h1 className="text-white">Artem</h1>
+                <span className="text-2xl">👨‍💻</span>
               </div>
-              <p className="tech-gradient text-[18px]">
-                Full-Stack Developer with frontend focus — React, Next.js,
-                TypeScript, Node.js
+              <p className="tech-gradient text-base leading-tight">
+                Full-Stack Developer — React, Next.js, TypeScript, Node.js
               </p>
             </div>
 
-            <div className="flex flex-col  gap-15 md:gap-5">
-              <div className="flex flex-row gap-4">
-                <p className="text-zinc-400 max-w-md">
-                  Building production web apps for fintech, AI platforms, and
-                  enterprise systems. Specialized in complex data visualization,
-                  real-time features, and scalable architectures.
-                  <span className="mx-1">See more in</span>
-                  <Link
-                    href="/#projects"
-                    className="underline text-white hover:text-zinc-300 transition-colors"
-                  >
-                    works
-                  </Link>
-                  <span>,</span>
-                  <Link
-                    href="/career"
-                    className="underline text-white hover:text-zinc-300 ml-1 transition-colors"
-                  >
-                    career
-                  </Link>
-                  <span>,</span>
-                  <Link
-                    href="/charts"
-                    className="underline text-white hover:text-zinc-300 ml-1 transition-colors"
-                  >
-                    charts
-                  </Link>
-                  <span>.</span>
-                </p>
-              </div>
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-md">
+              Building production web apps for fintech, AI platforms, and
+              enterprise systems. Specialized in complex data visualization,
+              real-time features, and scalable architectures.
+            </p>
 
-              {/* Domain Experience */}
-              <div className="flex flex-col relative items-center justify-center h-[150px] gap-3 rounded-lg overflow-">
-                {/* Inner shadow gradient overlay */}
-                <div className="fiber-dots">
+            {/* Navigation Links */}
+            <div className="flex flex-wrap gap-2 text-xs text-zinc-400">
+              <span>Explore:</span>
+              <Link
+                href="/#projects"
+                className="underline text-white hover:text-zinc-300 transition-colors"
+              >
+                Works
+              </Link>
+              <span>•</span>
+              <Link
+                href="/career"
+                className="underline text-white hover:text-zinc-300 transition-colors"
+              >
+                Career
+              </Link>
+              <span>•</span>
+              <Link
+                href="/charts"
+                className="underline text-white hover:text-zinc-300 transition-colors"
+              >
+                Charts Research
+              </Link>
+            </div>
+
+            {/* Domain Experience */}
+            <div className="relative">
+              <div className="flex flex-col relative items-start justify-center min-h-[120px] gap-3 rounded-lg overflow-hidden ">
+                <h3 className="text-xs text-zinc-500 uppercase tracking-wider">
+                  Domain Experience
+                </h3>
+                <div className="fiber-dots ">
                   <div
                     className="absolute inset-0 pointer-events-none rounded-lg"
                     style={{
@@ -88,20 +90,20 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="flex flex-wrap items-center justify-center gap-2 relative z-10">
+                <div className="flex flex-wrap gap-2 max-w-lg mx-auto items-center justify-center relative z-10">
                   {[
-                    "Financial Trading Platforms",
-                    "AI/ML Applications",
-                    "Data Visualization",
-                    "Payment Systems",
+                    "Financial Trading",
+                    "AI/ML Apps",
+                    "Data Viz",
+                    "Payments",
                     "Real-time Dashboards",
                     "Admin Panels",
-                    "Chatbots & Automation",
+                    "Chatbots",
                     "Telegram Bots",
                   ].map((domain) => (
                     <span
                       key={domain}
-                      className="px-3 py-1.5 bg-zinc-900/30 border border-zinc-800/50 rounded-full text-zinc-400 text-[12px]"
+                      className="px-2.5 py-1 bg-zinc-900/40 border border-zinc-800/50 rounded-full text-zinc-400 text-xs backdrop-blur-sm"
                     >
                       {domain}
                     </span>
@@ -111,8 +113,8 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="projects" className="flex flex-col gap-2">
-            <h2 className="w-fit mr-1 text-white">Recent works</h2>
+          <section id="projects" className="flex flex-col gap-4">
+            <h2 className="text-white text-base">💼 Recent Works</h2>
 
             <div className="flex flex-col md:flex-row flex-wrap gap-6">
               {works.map((work, index) => (
@@ -123,8 +125,8 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="contact" className="flex flex-col gap-3">
-            <h2 className="w-fit mr-1 text-white">Get in touch</h2>
+          <section id="contact" className="flex flex-col gap-4 pb-8">
+            <h2 className="text-white text-base">📬 Get in Touch</h2>
 
             <div className="flex flex-wrap gap-3">
               <SocialLink href="https://github.com/hpnssflw" external>

@@ -1,5 +1,5 @@
+import Link from "next/link";
 import Company from "../components/Company";
-import Navigation from "../components/Navigation";
 
 const companies = [
   {
@@ -77,26 +77,38 @@ const companies = [
 
 export default function CareerPage() {
   return (
-    <div className="min-h-screen max-w-[640px] mx-auto relative">
-      <div
-        className="fixed inset-0 pointer-events-none z-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 100% 150% at 50% 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.5) 50%, transparent 65%)",
-        }}
-      />
+    <div className="min-h-screen max-w-[640px] mx-auto relative py-5 px-5 md:px-0">
+      <div className="fiber-dots">
+        <div
+          className="absolute inset-0 pointer-events-none rounded-lg"
+          style={{
+            boxShadow: "inset 0 0 20px 20px rgba(0, 0, 0, 0.8)",
+            background:
+              "radial-gradient(ellipse at center, transparent 20%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)",
+          }}
+        />
+      </div>
 
       <div className="relative z-10">
-        <main className="flex flex-col gap-16">
-          <section className="flex flex-col gap-4">
-            <h1 className="tech-gradient">Career</h1>
-            <p className="font-light text-sm text-zinc-300">
-              Selected roles and projects that highlight experience building
-              products across fintech, AI, and complex web systems.
+        <Link
+          href="/"
+          className="text-xs text-zinc-400 hover:text-white transition-colors mb-6 inline-block"
+        >
+          ← Back
+        </Link>
+
+        <main className="flex flex-col gap-8 mt-4">
+          <section className="flex flex-col gap-3">
+            <h1 className="text-lg font-medium text-white">
+              💼 Career Journey
+            </h1>
+            <p className="text-zinc-400 text-xs leading-relaxed">
+              Selected roles and projects across fintech, AI, and enterprise
+              systems.
             </p>
           </section>
 
-          <section className="flex flex-col gap-12">
+          <section className="flex flex-col gap-8">
             {companies.map((company, index) => (
               <Company key={index} {...company} />
             ))}
