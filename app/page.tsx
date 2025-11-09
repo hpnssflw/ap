@@ -76,10 +76,20 @@ export default function Home() {
               </div>
 
               {/* Domain Experience */}
-              <div className="flex flex-col relative items-center justify-center h-[125px] gap-3">
+              <div className="flex flex-col relative items-center justify-center h-[150px] gap-3 rounded-lg overflow-">
                 <div className="fiber-dots" />
 
-                <div className="flex flex-wrap items-center justify-center gap-2">
+                {/* Inner shadow gradient overlay */}
+                <div
+                  className="absolute inset-0 pointer-events-none rounded-lg"
+                  style={{
+                    boxShadow: "inset 0 0 60px 20px rgba(0, 0, 0, 0.8)",
+                    background:
+                      "radial-gradient(ellipse at center, transparent 20%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)",
+                  }}
+                />
+
+                <div className="flex flex-wrap items-center justify-center gap-2 relative z-10">
                   {[
                     "Financial Trading Platforms",
                     "AI/ML Applications",

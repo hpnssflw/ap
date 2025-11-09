@@ -65,7 +65,7 @@ h2 {
   pointer-events: none;
   z-index: -1;
   opacity: 1;
-  height: 125px;
+  height: 140px;
 }
 
 .fiber-dots::before {
