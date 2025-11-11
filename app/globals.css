@@ -20,14 +20,13 @@ body {
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 18px;
-  font-weight: 400;
-  
+  font-weight: 500;  
 }
 
 .tech-gradient {
@@ -64,7 +63,7 @@ h2 {
   pointer-events: none;
   z-index: -1;
   opacity: 1;
-  height: 150px;
+  height: 135px;
 }
 
 .fiber-dots::before {
