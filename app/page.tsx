@@ -136,7 +136,7 @@ export default function Home() {
               scalable architectures.
             </p>
             <p className="text-zinc-400 text-sm leading-relaxed indent-4 text-justify">
-              I like to take notes about fields i like most, working with{" "}
+              I take notes on topics I&apos;m most interested in, working with{" "}
               <Link
                 href="/charts"
                 className="text-white italic hover:underline"
