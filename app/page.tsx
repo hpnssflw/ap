@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./components/Button";
 import WorkCard from "./components/WorkCard";
 
@@ -73,7 +74,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen  mx-auto relative py-5 px-5 md:px-0">
+    <div className="mx-auto relative py-15 px-5 md:px-0">
       <div className="fiber-dots">
         <div
           className="absolute inset-0 pointer-events-none rounded-lg"
@@ -119,7 +120,7 @@ export default function Home() {
           <section className="flex flex-col gap-6 mt-3">
             <div className="flex flex-col">
               <h1 className="text-white">Artem Polozov</h1>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-2 items-center -mt-1.5">
                 <p className="tech-gradient leading-tight">
                   Full-Stack Developer — React, Next.js, TypeScript, Node.js
                 </p>
@@ -127,9 +128,22 @@ export default function Home() {
               </div>
             </div>
             <p className="text-zinc-400 text-sm leading-relaxed indent-4 text-justify">
-              Building production web apps for fintech, AI platforms, and
-              enterprise systems. Specialized in complex data visualization,
-              real-time features, and scalable architectures.
+              Building production web apps for{" "}
+              <span className="text-white italic">fintech</span>,{" "}
+              <span className="text-white italic">AI platforms</span>, and{" "}
+              <span className="text-white italic">enterprise systems</span>.
+              Specialized in complex data visualization, real-time features, and
+              scalable architectures.
+            </p>
+            <p className="text-zinc-400 text-sm leading-relaxed indent-4 text-justify">
+              I like to take notes about fields i like most, working with{" "}
+              <Link
+                href="/charts"
+                className="text-white italic hover:underline"
+              >
+                charts
+              </Link>
+              .
             </p>
             <Button
               href="/career"
@@ -174,7 +188,7 @@ export default function Home() {
                     href={social.href}
                     variant="outline"
                     size="sm"
-                    className="w-[150px] justify-between border-0 gap-3 text-left text-zinc-300 "
+                    className="w-[150px] justify-between border-0 gap-3 py-0.5 text-left text-zinc-300 "
                     external={social.external}
                   >
                     <span className="flex items-center">

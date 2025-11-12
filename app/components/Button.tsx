@@ -23,7 +23,7 @@ export default function Button({
     "inline-flex items-center justify-center font-medium transition-all duration-200 rounded-md w-fit";
 
   const sizeStyles = {
-    sm: "px-4 py-1.5 text-xs",
+    sm: "px-4 py-0.5 text-xs",
     md: "px-6 py-2 text-sm",
     lg: "px-6 py-3 text-base",
   };

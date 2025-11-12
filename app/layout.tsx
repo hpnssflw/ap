@@ -22,9 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${ubuntu.className} ${ubuntu.variable} antialiased bg-black text-white`}
+        className={`${ubuntu.className} ${ubuntu.variable} min-h-screen flex flex-col antialiased bg-black text-white`}
       >
         {children}
+        <p className="mx-auto py-5 mt-auto text-[12px]">2025 @ Artem Polozov</p>
       </body>
     </html>
   );
