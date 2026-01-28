@@ -98,17 +98,17 @@ export default function Home() {
 
         <main className="flex flex-col gap-4 relative">
           {/* Hero Section */}
-          <section className="flex flex-col gap-6 mt-3">
-            <div className="flex flex-col ">
-              <h1 className="text-white">Artem Polozov</h1>
-              <div className="flex gap-2 items-center -mt-1.5">
-                <p className="tech-gradient leading-tight">
+          <section className="flex flex-col gap-4 md:gap-6 mt-2 md:mt-3">
+            <div className="flex flex-col">
+              <h1 className="text-white text-xl md:text-2xl">Artem Polozov</h1>
+              <div className="flex gap-2 items-center -mt-1 md:-mt-1.5">
+                <p className="tech-gradient leading-tight text-xs md:text-sm">
                   Full-Stack Developer — React, Next.js, TypeScript, Node.js
                 </p>
-                <span className="mb-0.5">👨‍💻</span>
+                <span className="mb-0.5 text-sm md:text-base">👨‍💻</span>
               </div>
             </div>
-            <p className="text-zinc-400 text-sm leading-5 indent-4 text-justify">
+            <p className="text-zinc-400 text-xs md:text-sm leading-5 md:leading-relaxed indent-0 md:indent-4 text-justify">
               Building production web apps for{" "}
               <span className="text-white italic">fintech</span>,{" "}
               <span className="text-white italic">AI platforms</span>, and{" "}
@@ -125,15 +125,16 @@ export default function Home() {
               </a>
               .
             </p>
-            <p className="text-zinc-400 text-sm leading-relaxed indent-4 text-justify"></p>
           </section>
 
           {/* VoiceKeeper Project */}
-          <section id="projects" className="flex flex-col gap-4">
-            <h2 className="text-white text-sm font-medium underline">Apps</h2>
+          <section id="projects" className="flex flex-col gap-3 md:gap-4">
+            <h2 className="text-white text-xs md:text-sm font-medium underline">
+              Apps
+            </h2>
 
-            <div className="flex  gap-3">
-              <div className="relative w-full aspect-video rounded-md overflow-hidden border border-zinc-800/60">
+            <div className="flex flex-col md:flex-row gap-3">
+              <div className="relative w-full aspect-video md:flex-1 rounded-md overflow-hidden border border-zinc-800/60">
                 <Image
                   src="/vk.jpg"
                   alt="VoiceKeeper"
@@ -141,14 +142,16 @@ export default function Home() {
                   className="object-center"
                 />
               </div>
-              <div className="flex flex-col gap-1.5">
-                <h3 className="text-white text-sm font-medium">VoiceKeeper</h3>
-                <p className="text-zinc-400 text-xs leading-5">
+              <div className="flex flex-col gap-1.5 md:flex-1">
+                <h3 className="text-white text-xs md:text-sm font-medium">
+                  VoiceKeeper
+                </h3>
+                <p className="text-zinc-400 text-[10px] md:text-xs leading-4 md:leading-5">
                   AI content strategist for Telegram authors. Analyzes author
                   style, monitors trends, generates posts.
                 </p>
 
-                <div className="flex gap-4 mt-auto ">
+                <div className="flex flex-col md:flex-row gap-2 md:gap-4 mt-2 md:mt-auto">
                   <a
                     href="https://voicekeeper-admin.vercel.app/"
                     target="_blank"
@@ -170,8 +173,10 @@ export default function Home() {
 
           {/* Skills */}
           <section className="flex flex-col gap-2">
-            <h2 className="text-white text-sm font-medium underline">Skills</h2>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-zinc-400">
+            <h2 className="text-white text-xs md:text-sm font-medium underline">
+              Skills
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1.5 md:gap-y-1 text-[10px] md:text-xs text-zinc-400">
               <div>
                 <span className="text-white">Frameworks & Languages:</span>{" "}
                 React, Next.js, TypeScript, Node.js, Express
@@ -215,23 +220,22 @@ export default function Home() {
           </section>
 
           {/* socials */}
-
-          <ul className="flex mt-auto  items-center justify-center">
+          <ul className="flex flex-col md:flex-row mt-4 md:mt-auto items-center justify-center gap-3 md:gap-0">
             {socials.map((social) => (
               <li key={social.name}>
                 <Button
                   href={social.href}
                   variant="outline"
                   size="sm"
-                  className="w-[150px] justify-between border-0 gap-3 py-0.5 text-left text-zinc-300 "
+                  className="w-full md:w-[250px] justify-center border-0 gap-2 md:gap-3 py-1.5 md:py-0.5 text-center md:text-left text-zinc-300"
                   external={social.external}
                 >
-                  <span className="flex items-center">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-md text-zinc-300">
+                  <span className="flex items-center gap-2 md:gap-0">
+                    <span className="flex h-6 w-6 md:h-7 md:w-7 items-center justify-center rounded-md text-zinc-300">
                       {social.icon}
                     </span>
                     <span className="flex flex-col leading-tight">
-                      <span className="text-xs text-white">
+                      <span className="text-[10px] md:text-xs text-white break-all md:break-normal">
                         {social.handle}
                       </span>
                     </span>
