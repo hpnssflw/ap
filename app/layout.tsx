@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${ubuntu.className} ${ubuntu.variable} min-h-screen flex flex-col antialiased bg-black text-white`}
       >
         {children}
-        <p className="mx-auto py-5 mt-auto text-[12px]">2025 @ Artem Polozov</p>
+        <p className="mx-auto py-5 mt-auto text-[12px]">2026 @ Artem Polozov</p>
       </body>
     </html>
   );
