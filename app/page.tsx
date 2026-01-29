@@ -96,16 +96,31 @@ export default function Home() {
       <div className="relative max-w-lg mx-auto z-10">
         <header className="w-full"></header>
 
-        <main className="flex flex-col gap-4 relative">
+        <main className="flex flex-col gap-8   relative">
           {/* Hero Section */}
           <section className="flex flex-col gap-4 md:gap-6 mt-2 md:mt-3">
-            <div className="flex flex-col">
-              <h1 className="text-white text-xl md:text-2xl">Artem Polozov</h1>
-              <div className="flex gap-2 items-center -mt-1 md:-mt-1.5">
-                <p className="tech-gradient leading-tight text-xs md:text-sm">
-                  Full-Stack Developer — React, Next.js, TypeScript, Node.js
-                </p>
-                <span className="mb-0.5 text-sm md:text-base">👨‍💻</span>
+            <div className="flex items-center gap-3 md:gap-4">
+              <div className="relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-full overflow-hidden border-2 border-zinc-700">
+                <Image
+                  src="/photo.webp"
+                  alt="Artem Polozov"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex flex-col flex-1">
+                <h1
+                  className="text-white text-xl md:text-2xl"
+                  style={{ fontFamily: "var(--font-crimson)" }}
+                >
+                  Artem Polozov
+                </h1>
+                <div className="flex gap-2 items-center -mt-1 md:-mt-1.5">
+                  <p className="tech-gradient leading-tight text-xs md:text-sm">
+                    Full-Stack Developer — React, Next.js, TypeScript, Node.js
+                  </p>
+                  <span className="mb-0.5 text-sm md:text-base">👨‍💻</span>
+                </div>
               </div>
             </div>
             <p className="text-zinc-400 text-xs md:text-sm leading-5 md:leading-relaxed indent-0 md:indent-4 text-justify">
@@ -129,7 +144,10 @@ export default function Home() {
 
           {/* VoiceKeeper Project */}
           <section id="projects" className="flex flex-col gap-3 md:gap-4">
-            <h2 className="text-white text-xs md:text-sm font-medium underline">
+            <h2
+              className="text-white text-xs md:text-sm font-medium underline"
+              style={{ fontFamily: "var(--font-crimson)" }}
+            >
               Apps
             </h2>
 
@@ -137,16 +155,19 @@ export default function Home() {
               <div className="relative w-full aspect-video md:flex-1 rounded-md overflow-hidden border border-zinc-800/60">
                 <Image
                   src="/vk.jpg"
-                  alt="VoiceKeeper"
                   fill
-                  className="object-center"
+                  alt="VoiceKeeper"
+                  className="object-center "
                 />
               </div>
               <div className="flex flex-col gap-1.5 md:flex-1">
-                <h3 className="text-white text-xs md:text-sm font-medium">
+                <h2
+                  className="text-white text-xs md:text-sm font-medium "
+                  style={{ fontFamily: "var(--font-crimson)" }}
+                >
                   VoiceKeeper
-                </h3>
-                <p className="text-zinc-400 text-[10px] md:text-xs leading-4 md:leading-5">
+                </h2>
+                <p className="text-zinc-400 text-[10px] md:text-xs text-justify leading-4 md:leading-5">
                   AI content strategist for Telegram authors. Analyzes author
                   style, monitors trends, generates posts.
                 </p>
@@ -173,8 +194,11 @@ export default function Home() {
 
           {/* Skills */}
           <section className="flex flex-col gap-2">
-            <h2 className="text-white text-xs md:text-sm font-medium underline">
-              Skills
+            <h2
+              className="text-white text-xs md:text-sm font-medium underline"
+              style={{ fontFamily: "var(--font-crimson)" }}
+            >
+              Techs
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1.5 md:gap-y-1 text-[10px] md:text-xs text-zinc-400">
               <div>
